@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -1549,14 +1552,7 @@
         regionu.
       </p>
       <div class="map-wrapper">
-        <iframe title="Mapa Kaszub" id="kaszuby-map"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=17.2%2C53.8%2C18.6%2C54.7&layer=mapnik&marker=54.2%2C18.0"
-          style="
-              width: 100%;
-              height: 500px;
-              border: none;
-              border-radius: 16px;
-            " loading="lazy"></iframe>
+        <div id="map" style="width: 100%; height: 500px; border-radius: 16px; border: none; z-index: 1;"></div>
         <div class="map-legend">
           <div class="legend-item">
             <span class="legend-dot dot-trail"></span>Szlaki piesze
@@ -1653,6 +1649,10 @@
     </div>
   </div>
 
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="coords.js"></script>
   <script src="app.js"></script>
 </body>
 

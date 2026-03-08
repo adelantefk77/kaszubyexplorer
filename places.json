@@ -1,0 +1,218 @@
+[
+  {
+    "id": "trail-1",
+    "title": "Szlak Kaszubski"
+  },
+  {
+    "id": "trail-2",
+    "title": "Szlak Wzgórz Szymbarskich"
+  },
+  {
+    "id": "trail-3",
+    "title": "Szlak Kartuski"
+  },
+  {
+    "id": "trail-4",
+    "title": "Szlak Jezior Raduńskich"
+  },
+  {
+    "id": "trail-5",
+    "title": "Szlak Kamiennych Kręgów"
+  },
+  {
+    "id": "trail-6",
+    "title": "Szlak Wdzydzki"
+  },
+  {
+    "id": "bike-1",
+    "title": "Pierścień Zatoki Puckiej"
+  },
+  {
+    "id": "bike-2",
+    "title": "Kaszubska Marszruta"
+  },
+  {
+    "id": "bike-3",
+    "title": "Dookoła Jezior Wdzydzkich"
+  },
+  {
+    "id": "bike-4",
+    "title": "Szlak Geologiczny"
+  },
+  {
+    "id": "bike-5",
+    "title": "Szlak Józefa Wybickiego"
+  },
+  {
+    "id": "bike-6",
+    "title": "Błękitna Trasa Rowerowa"
+  },
+  {
+    "id": "lake-wdzydze",
+    "title": "Jezioro Wdzydze"
+  },
+  {
+    "id": "lake-zarnowieckie",
+    "title": "Jezioro Żarnowieckie"
+  },
+  {
+    "id": "lake-charzykowskie",
+    "title": "Jezioro Charzykowskie"
+  },
+  {
+    "id": "lake-radunskie",
+    "title": "Jezioro Raduńskie Dolne"
+  },
+  {
+    "id": "lake-karsinske",
+    "title": "Jezioro Karsińskie"
+  },
+  {
+    "id": "lake-ostrzyckie",
+    "title": "Jezioro Ostrzyckie"
+  },
+  {
+    "id": "lake-mausz",
+    "title": "Jezioro Mausz"
+  },
+  {
+    "id": "lake-lebsko",
+    "title": "Jezioro Łebsko"
+  },
+  {
+    "id": "place-skansen",
+    "title": "Kaszubski Park Etnograficzny we Wdzydzach"
+  },
+  {
+    "id": "place-kregi",
+    "title": "Kamienne Kręgi w Węsiorach"
+  },
+  {
+    "id": "place-wiezyce",
+    "title": "Wieżyca – najwyższy punkt Niżu Środkowoeuropejskiego"
+  },
+  {
+    "id": "place-kartuzy",
+    "title": "Kolegiata Kartuska w Kartuzach"
+  },
+  {
+    "id": "place-bedomin",
+    "title": "Muzeum Hymnu Narodowego w Będominie"
+  },
+  {
+    "id": "place-bytow",
+    "title": "Zamek Krzyżacki w Bytowie"
+  },
+  {
+    "id": "place-szymbark",
+    "title": "Centrum Edukacji i Promocji w Szymbarku"
+  },
+  {
+    "id": "place-slowinski",
+    "title": "Słowiński Park Narodowy"
+  },
+  {
+    "id": "place-kalwaria",
+    "title": "Kalwaria Wejherowska"
+  },
+  {
+    "id": "place-lasy-mirachowskie",
+    "title": "Lasy Mirachowskie"
+  },
+  {
+    "id": "place-muzeum-akordeonu",
+    "title": "Muzeum Akordeonu w Kościerzynie"
+  },
+  {
+    "id": "place-wdzydzki-park",
+    "title": "Wdzydzki Park Krajobrazowy"
+  },
+  {
+    "id": "lake-wielewskie",
+    "title": "Jezioro Wielewskie"
+  },
+  {
+    "id": "park-bory",
+    "title": "Bory Tucholskie"
+  },
+  {
+    "id": "park-kpk",
+    "title": "Kaszubski Park Krajobrazowy"
+  },
+  {
+    "id": "park-wpk",
+    "title": "Wdzydzki Park Krajobrazowy"
+  },
+  {
+    "id": "kayak-1",
+    "title": "Kółko Raduńskie i Radunia"
+  },
+  {
+    "id": "kayak-2",
+    "title": "Spływ rzeką Słupią"
+  },
+  {
+    "id": "kayak-3",
+    "title": "Spływ do Bałtyku Piaśnicą"
+  },
+  {
+    "id": "kayak-4",
+    "title": "Szlak Kajakowy Wieprza"
+  },
+  {
+    "id": "rest-1",
+    "title": "Mùlk Chëcz Kaszëbskô"
+  },
+  {
+    "id": "rest-2",
+    "title": "Nordowi Mól"
+  },
+  {
+    "id": "rest-3",
+    "title": "Restauracja \"Pod Sytą Gęsią\""
+  },
+  {
+    "id": "rest-4",
+    "title": "Karczma Viking"
+  },
+  {
+    "id": "rest-5",
+    "title": "Restauracja Biôłi Trus (Leśny Dwór)"
+  },
+  {
+    "id": "rest-6",
+    "title": "Restauracja Pałac Łebunia"
+  },
+  {
+    "id": "rest-7",
+    "title": "Karczma Grzybowski Młyn"
+  },
+  {
+    "id": "rest-8",
+    "title": "Gospoda Kaszubska Chata"
+  },
+  {
+    "id": "rest-9",
+    "title": "Ryby nad Jeziorem"
+  },
+  {
+    "id": "attraction-bory-1",
+    "title": "Most Miłości"
+  },
+  {
+    "id": "attraction-bory-2",
+    "title": "Ruiny mostu"
+  },
+  {
+    "id": "attraction-bory-3",
+    "title": "Wdecki Park Krajobrazowy"
+  },
+  {
+    "id": "restaurant-wdziydze-1",
+    "title": "Zajazd u Sołtysa"
+  },
+  {
+    "id": "restaurant-wdziydze-2",
+    "title": "Weranda Bar"
+  }
+]
