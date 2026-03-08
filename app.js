@@ -762,6 +762,73 @@ const modalData = {
     ],
     tags: ["Ryby", "Nad jeziorem", "Smażalnia", "Świeżość"],
   },
+
+  // NOWE ATRAKCJE BORY TUCHOLSKIE
+  'attraction-bory-1': {
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Beechforest062005.jpg/960px-Beechforest062005.jpg',
+    badge: 'Natura',
+    title: 'Most Miłości',
+    subtitle: 'Bory Tucholskie - 4.4 ⭐️ na Google Maps',
+    desc: 'Romantyczne miejsce położone wśród dzikiej przyrody w Borach Tucholskich, idealne na spacer we dwoje. Słynie z zawieszonych na barierach kłódek zostawianych przez zakochanych.',
+    stats: [
+      { val: 'Dostępne', key: 'Wejście' },
+      { val: 'Wysoka', key: 'Popularność' },
+      { val: 'Spacerowy', key: 'Charakter' },
+    ],
+    tags: ['Romantyczne', 'Fotografia', 'Natura', 'Spacer'],
+  },
+  'attraction-bory-2': {
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/KB_Zamek_Krzy%C5%BCacki_w_Bytowie.jpg/960px-KB_Zamek_Krzy%C5%BCacki_w_Bytowie.jpg',
+    badge: 'Historia',
+    title: 'Ruiny mostu',
+    subtitle: 'Bory Tucholskie - 4.7 ⭐️ na Google Maps',
+    desc: 'Historyczne pozostałości starego mostu, malowniczo zlokalizowane nad brzegiem rzeki. Obiekt stanowi fascynujący punkt dla pasjonatów lokalnej historii i dzikiej przyrody.',
+    stats: [
+      { val: 'Bezpłatne', key: 'Bilety' },
+      { val: 'Historyczne', key: 'Znaczenie' },
+    ],
+    tags: ['Zabytki', 'Urbex', 'Ruiny', 'Rzeka'],
+  },
+  'attraction-bory-3': {
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Jezioro_%C5%BBabinek_fragment_Wdecki_PK_01.07.10_p.jpg/960px-Jezioro_%C5%BBabinek_fragment_Wdecki_PK_01.07.10_p.jpg',
+    badge: 'Park',
+    title: 'Wdecki Park Krajobrazowy',
+    subtitle: 'Bory Tucholskie - 4.7 ⭐️ na Google Maps',
+    desc: 'Niezwykle malowniczy park obejmujący terytorium wokół doliny rzeki Wdy. Charakteryzuje się borami sosnowymi, torfowiskami i polodowcowymi wzniesieniami. Często organizowane są tu spacery edukacyjne.',
+    stats: [
+      { val: '23 786 ha', key: 'Powierzchnia' },
+      { val: 'Doliny', key: 'Rzeźba' },
+    ],
+    tags: ['Park Krajobrazowy', 'Rzeka Wda', 'Natura', 'Edukacja'],
+  },
+
+  // NOWE RESTAURACJE WDZYDZE
+  'restaurant-wdziydze-1': {
+    img: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    badge: 'Restauracja',
+    title: 'Zajazd u Sołtysa',
+    subtitle: 'Wdzydze Kiszewskie - 4.6 ⭐️ na Google Maps',
+    desc: 'Spokojny, tradycyjny zajazd zlokalizowany na obrzeżach parku etonograficznego. Znany z przygotowywania na miejscu świeżych, kaszubskich specjałów w drewnianych wnętrzach.',
+    stats: [
+      { val: 'Kaszubska', key: 'Kuchnia' },
+      { val: 'Umiarkowane', key: 'Ceny' },
+      { val: 'Polecane', key: 'Ocena' },
+    ],
+    tags: ['Obiad', 'Tradycja', 'Zajazd', 'Klimatyczne'],
+  },
+  'restaurant-wdziydze-2': {
+    img: 'https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    badge: 'Bar / Lounge',
+    title: 'Weranda Bar',
+    subtitle: 'Wdzydze (nad wodą) - 4.7 ⭐️ na Google Maps',
+    desc: 'Bar lounge i miejsca noclegowe tuż nad brzegiem Kaszubskiego Morza (Jeziora Wdzydze). Lokal zebrał wysokie noty za gigantyczne, smaczne porcje jedzenia oraz wyjątkową bliskość plaży.',
+    stats: [
+      { val: 'Europejska', key: 'Kuchnia' },
+      { val: 'Tak', key: 'Pokoje' },
+      { val: 'XL', key: 'Porcje' },
+    ],
+    tags: ['Plaża', 'Bar', 'Duże porcje', 'Noclegi'],
+  },
 };
 
 // ---- MODAL ENGINE ----
