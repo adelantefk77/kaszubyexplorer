@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaszuby Explorer – Odkryj piękno Kaszub</title>
+  <meta name="description" content="Przewodnik turystyczny po Kaszubach – szlaki, jeziora i ciekawe miejsca. Odkryj skarby Krainy Tysiąca Jezior." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">Kaszuby<strong>Explorer</strong></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#explore" class="nav-link active" data-section="explore">Poznaj</a>
+        <a href="#trails" class="nav-link" data-section="trails">Szlaki</a>
+        <a href="#lakes" class="nav-link" data-section="lakes">Jeziora</a>
+        <a href="#places" class="nav-link" data-section="places">Miejsca</a>
+        <a href="#map" class="nav-link" data-section="map">Mapa</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/kaszuby_hero.png" alt="Kaszuby z lotu ptaka" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">🏔️ Kraina Tysiąca Jezior</span>
+      <h1 class="hero-title">Odkryj ukryte skarby<br /><span class="hero-highlight">Kaszub</span></h1>
+      <p class="hero-sub">Malownicze krajobrazy, krystaliczne jeziora i bogata kultura północnej Polski czekają na Ciebie.</p>
+      <div class="hero-actions">
+        <a href="#explore" class="btn btn-primary">Zacznij odkrywać</a>
+        <a href="#trails" class="btn btn-ghost">Szlaki turystyczne</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">1000+</span><span class="stat-lbl">Jezior</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">139 km</span><span class="stat-lbl">Szlak Kaszubski</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">329 m</span><span class="stat-lbl">Wieżyca (n.p.m.)</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Przewiń w dół</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- EXPLORE / CATEGORIES -->
+  <section class="section" id="explore">
+    <div class="container">
+      <div class="section-label">Kategorie</div>
+      <h2 class="section-title">Co chcesz odkryć?</h2>
+      <p class="section-desc">Kaszuby oferują niepowtarzalne doświadczenia dla każdego podróżnika – od aktywnych turystów po miłośników historii i kultury.</p>
+      <div class="categories-grid">
+        <a href="#lakes" class="category-card" id="cat-lakes">
+          <div class="cat-icon">🏞️</div>
+          <div class="cat-body">
+            <h3>Jeziora</h3>
+            <p>Ponad 1000 krystalicznych jezior polodowcowych tworzy niepowtarzający się krajobraz "Kaszubskiego Morza".</p>
+          </div>
+          <div class="cat-arrow">→</div>
+        </a>
+        <a href="#trails" class="category-card cat-green" id="cat-trails">
+          <div class="cat-icon">🥾</div>
+          <div class="cat-body">
+            <h3>Szlaki piesze</h3>
+            <p>Setki kilometrów znakowanych tras przez lasy, wzgórza i nad brzegami jezior dla każdego poziomu.</p>
+          </div>
+          <div class="cat-arrow">→</div>
+        </a>
+        <a href="#places" class="category-card" id="cat-culture">
+          <div class="cat-icon">🏛️</div>
+          <div class="cat-body">
+            <h3>Miejsca kultury</h3>
+            <p>Skanseny, zamki, muzea i kamienne kręgi – historia Kaszub jest równie fascynująca, co jej przyroda.</p>
+          </div>
+          <div class="cat-arrow">→</div>
+        </a>
+        <a href="#trails" class="category-card" id="cat-bike">
+          <div class="cat-icon">🚴</div>
+          <div class="cat-body">
+            <h3>Szlaki rowerowe</h3>
+            <p>Kaszuby to jedno z najlepszych miejsc w Polsce do turystyki rowerowej – trasy dla każdego.</p>
+          </div>
+          <div class="cat-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAILS -->
+  <section class="section bg-light" id="trails">
+    <div class="container">
+      <div class="section-label">Szlaki</div>
+      <h2 class="section-title">Szlaki turystyczne</h2>
+      <p class="section-desc">Wybierz szlak dopasowany do swojego poziomu i odkryj niezapomniane widoki Kaszub.</p>
+
+      <!-- Tabs -->
+      <div class="tabs" id="trail-tabs">
+        <button class="tab active" data-tab="hiking" id="tab-hiking">🥾 Piesze</button>
+        <button class="tab" data-tab="cycling" id="tab-cycling">🚴 Rowerowe</button>
+      </div>
+
+      <!-- Hiking Trails -->
+      <div class="trails-grid" id="tab-content-hiking">
+        <article class="trail-card" onclick="openModal('trail-1')">
+          <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Szlak Kaszubski" class="trail-img" />
+            <span class="trail-badge badge-red">Czerwony</span>
+            <span class="trail-difficulty diff-medium">Średni</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Kaszubski</h3>
+            <div class="trail-meta">
+              <span>📏 139 km (całość) / ~60 km (KPK)</span>
+              <span>⏱️ Podzielony na odcinki</span>
+            </div>
+            <p class="trail-desc">Jeden z najdłuższych i najpiękniejszych szlaków pieszych w północnej Polsce. Przemierza Pojezierze Kaszubskie przez Lasy Mirachowskie, Jeziora Raduńskie i okolice Kościerzyny.</p>
+            <div class="trail-tags">
+              <span class="tag">Lasy Mirachowskie</span>
+              <span class="tag">Jeziora Raduńskie</span>
+              <span class="tag">Kościerzyna</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('trail-2')">
+          <div class="trail-img-wrap">
+            <img src="assets/wiezyce_tower.png" alt="Szlak Wzgórz Szymbarskich" class="trail-img" />
+            <span class="trail-badge badge-black">Czarny</span>
+            <span class="trail-difficulty diff-hard">Trudny</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Wzgórz Szymbarskich</h3>
+            <div class="trail-meta">
+              <span>📏 121,5 km całość</span>
+              <span>⏱️ Wielodniowy</span>
+            </div>
+            <p class="trail-desc">Od Sopotu przez Wieżycę (329 m n.p.m. – najwyższy punkt Niżu Środkowoeuropejskiego) przez Gołubie i Bącką Hutę do Sierakowic. Panoramiczne widoki na całe Kaszuby.</p>
+            <div class="trail-tags">
+              <span class="tag">Wieżyca 329 m</span>
+              <span class="tag">Sopot</span>
+              <span class="tag">Szymbark</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('trail-3')">
+          <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Szlak Kartuski" class="trail-img" style="filter: hue-rotate(180deg) saturate(0.9);" />
+            <span class="trail-badge badge-blue">Niebieski</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Kartuski</h3>
+            <div class="trail-meta">
+              <span>📏 Trójmiasto → Kartuzy</span>
+              <span>⏱️ 1–2 dni</span>
+            </div>
+            <p class="trail-desc">Malowniczy szlak z Trójmiasta do Kartuz wzdłuż rzeki Raduni. Idealna trasa weekendowa łącząca aglomerację miejską z sercem Kaszub.</p>
+            <div class="trail-tags">
+              <span class="tag">Rzeka Radunia</span>
+              <span class="tag">Trójmiasto</span>
+              <span class="tag">Kartuzy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('trail-4')">
+          <div class="trail-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Szlak Jezior Raduńskich" class="trail-img" />
+            <span class="trail-badge badge-green">Zielony</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Jezior Raduńskich</h3>
+            <div class="trail-meta">
+              <span>📏 ~40 km</span>
+              <span>⏱️ 1–2 dni</span>
+            </div>
+            <p class="trail-desc">Idealny dla miłośników jezior i dzikiej przyrody. Biegnie wzdłuż Jeziora Raduńskiego Dolnego (737 ha) i Górnego (392 ha), tworząc tzw. "Kółko Raduńskie".</p>
+            <div class="trail-tags">
+              <span class="tag">Kółko Raduńskie</span>
+              <span class="tag">J. Raduńskie</span>
+              <span class="tag">Rodzinny</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('trail-5')">
+          <div class="trail-img-wrap">
+            <img src="assets/kamienne_kregi.png" alt="Szlak Kamiennych Kręgów" class="trail-img" />
+            <span class="trail-badge badge-yellow">Żółty</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Kamiennych Kręgów</h3>
+            <div class="trail-meta">
+              <span>📏 ~20 km</span>
+              <span>⏱️ Całodniowy</span>
+            </div>
+            <p class="trail-desc">Niezwykły szlak prowadzący do tajemniczych kamiennych kręgów w Węsiorach i Odrach – cmentarzysk Gotów i Gepidów z I–III w. n.e., uznawanych przez niektórych za miejsca mocy.</p>
+            <div class="trail-tags">
+              <span class="tag">Węsiory</span>
+              <span class="tag">Historia</span>
+              <span class="tag">Tajemnice</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('trail-6')">
+          <div class="trail-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Szlak Wdzydzki" class="trail-img" style="filter: saturate(1.2);" />
+            <span class="trail-badge badge-green">Zielony</span>
+            <span class="trail-difficulty diff-medium">Średni</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Wdzydzki</h3>
+            <div class="trail-meta">
+              <span>📏 ~48 km dookoła jezior</span>
+              <span>⏱️ 2–3 dni</span>
+            </div>
+            <p class="trail-desc">Pętla przez Wdzydzki Park Krajobrazowy wokół największego kaszubskiego jeziora – Wdzydzé (1417 ha). Obejmuje jeziora Jelenie, Radolne i Gołuń.</p>
+            <div class="trail-tags">
+              <span class="tag">J. Wdzydze</span>
+              <span class="tag">Park Krajobrazowy</span>
+              <span class="tag">Kajaki</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Cycling Trails -->
+      <div class="trails-grid hidden" id="tab-content-cycling">
+        <article class="trail-card" onclick="openModal('bike-1')">
+          <div class="trail-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Szlak Pierścienia Zatoki Puckiej" class="trail-img" />
+            <span class="trail-badge badge-blue">Niebieski</span>
+            <span class="trail-difficulty diff-medium">Średni</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Pierścień Zatoki Puckiej</h3>
+            <div class="trail-meta">
+              <span>📏 ~76 km</span>
+              <span>⏱️ 1–2 dni</span>
+            </div>
+            <p class="trail-desc">Spektakularny szlak rowerowy wzdłuż brzegu Zatoki Puckiej. Prowadzi z Gdyni przez Swarzewo, Puck, Władysławowo, Chałupy, Kuźnicę, Jastarnię, Juratę aż do Helu.</p>
+            <div class="trail-tags">
+              <span class="tag">Hel</span>
+              <span class="tag">Morze</span>
+              <span class="tag">Asfalt</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('bike-2')">
+          <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Kaszubska Marszruta" class="trail-img" style="filter: saturate(1.3) brightness(0.95);" />
+            <span class="trail-badge badge-green">Zielony</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Kaszubska Marszruta</h3>
+            <div class="trail-meta">
+              <span>📏 4 trasy w Borach Tucholskich</span>
+              <span>⏱️ Rodzinny</span>
+            </div>
+            <p class="trail-desc">System czterech szlaków rowerowych w Borach Tucholskich, odpowiedni dla rodzin z dziećmi. Trasy zachwycają widokami i pełne są dzikiej zwierzyny.</p>
+            <div class="trail-tags">
+              <span class="tag">Bory Tucholskie</span>
+              <span class="tag">Rodziny</span>
+              <span class="tag">Natura</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('bike-3')">
+          <div class="trail-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Dookoła Jezior Wdzydzkich" class="trail-img" style="filter: hue-rotate(20deg);" />
+            <span class="trail-badge badge-red">Czerwony</span>
+            <span class="trail-difficulty diff-medium">Średni</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Dookoła Jezior Wdzydzkich</h3>
+            <div class="trail-meta">
+              <span>📏 48,5 km</span>
+              <span>⏱️ 1 dzień</span>
+            </div>
+            <p class="trail-desc">Rowerowa pętla wokół kompleksu Jezior Wdzydzkich – największego akwenu Kaszub. Widoki na "Kaszubskie Morze" z różnych perspektyw.</p>
+            <div class="trail-tags">
+              <span class="tag">J. Wdzydze</span>
+              <span class="tag">Pętla</span>
+              <span class="tag">Widoki</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('bike-4')">
+          <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Szlak Geologiczny" class="trail-img" style="filter: hue-rotate(80deg) saturate(0.8);" />
+            <span class="trail-badge badge-yellow">Żółty</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Geologiczny</h3>
+            <div class="trail-meta">
+              <span>📏 30 km</span>
+              <span>⏱️ 1 dzień</span>
+            </div>
+            <p class="trail-desc">Rowerowa trasa przez Wdzydze Tucholskie, Cisewie, Bąk, Karsin, Wiele i Przytarnię. Pokazuje geologię polodowcowego krajobrazu Kaszub.</p>
+            <div class="trail-tags">
+              <span class="tag">Edukacja</span>
+              <span class="tag">Geologia</span>
+              <span class="tag">Wiele</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('bike-5')">
+          <div class="trail-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Szlak Józefa Wybickiego" class="trail-img" style="filter: saturate(0.9) brightness(1.05);" />
+            <span class="trail-badge badge-black">Czarny</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Szlak Józefa Wybickiego</h3>
+            <div class="trail-meta">
+              <span>📏 ~25 km</span>
+              <span>⏱️ Półdniowy</span>
+            </div>
+            <p class="trail-desc">Historyczny szlak prowadzący między Będominem (miejscem urodzenia twórcy polskiego hymnu) a Sikorzynem. Łączy piękno przyrody z historią narodową.</p>
+            <div class="trail-tags">
+              <span class="tag">Będomin</span>
+              <span class="tag">Hymn Polski</span>
+              <span class="tag">Historia</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="trail-card" onclick="openModal('bike-6')">
+          <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Błękitna Trasa Rowerowa" class="trail-img" style="filter: hue-rotate(170deg) saturate(0.85);" />
+            <span class="trail-badge badge-blue">Niebieski</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+          </div>
+          <div class="trail-body">
+            <h3 class="trail-name">Błękitna Trasa Rowerowa</h3>
+            <div class="trail-meta">
+              <span>📏 36,5 km</span>
+              <span>⏱️ Półdniowy</span>
+            </div>
+            <p class="trail-desc">Trasa wzdłuż Zatoki Gdańskiej i w okolicach Kaszubskiego Parku Krajobrazowego. Wydzielone ścieżki rowerowe, minimalne przewyższenia, idealna dla dzieci.</p>
+            <div class="trail-tags">
+              <span class="tag">Zatoka Gdańska</span>
+              <span class="tag">Ścieżka</span>
+              <span class="tag">KPK</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAKES -->
+  <section class="section" id="lakes">
+    <div class="container">
+      <div class="section-label">Jeziora</div>
+      <h2 class="section-title">Najpiękniejsze jeziora Kaszub</h2>
+      <p class="section-desc">Kaszuby są domem dla ponad 1000 jezior polodowcowych. Oto największe i najpiękniejsze z nich.</p>
+      <div class="lakes-grid">
+
+        <div class="lake-card lake-featured" onclick="openModal('lake-wdzydze')">
+          <div class="lake-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Jezioro Wdzydze" class="lake-img" />
+            <div class="lake-img-overlay">
+              <span class="lake-crown">👑 Największe</span>
+            </div>
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Wdzydze</h3>
+            <p class="lake-nickname">„Kaszubskie Morze"</p>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">1417 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">68 m</span><span class="ls-key">Głębokość max</span></div>
+              <div class="lake-stat"><span class="ls-val">6.</span><span class="ls-key">w Polsce</span></div>
+            </div>
+            <p class="lake-desc">Największe jezioro Kaszub i Pojezierza Kaszubskiego, o charakterystycznym kształcie krzyża złożonego z pięciu połączonych akwenów. Na jeziorze znajdują się naturalne wyspy, w tym Ostrów Wielki – jedna z największych wysp jeziornych w Polsce.</p>
+            <div class="lake-activities">
+              <span class="activity">⛵ Żeglarstwo</span>
+              <span class="activity">🛶 Kajaki</span>
+              <span class="activity">🎣 Wędkarstwo</span>
+              <span class="activity">🏊 Kąpiel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-zarnowieckie')">
+          <div class="lake-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Jezioro Żarnowieckie" class="lake-img" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Żarnowieckie</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">1430 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">max 20 m</span><span class="ls-key">Głębokość</span></div>
+            </div>
+            <p class="lake-desc">Położone w północnej części Kaszub, uważane za jedno z najczystszych jezior w regionie. Doskonałe warunki do żeglarstwa i sportów wodnych.</p>
+            <div class="lake-activities">
+              <span class="activity">⛵ Żeglarstwo</span>
+              <span class="activity">🏄 Windsurfing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-charzykowskie')">
+          <div class="lake-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Jezioro Charzykowskie" class="lake-img" style="filter: hue-rotate(10deg);" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Charzykowskie</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">1300 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">30,5 m</span><span class="ls-key">Głębokość max</span></div>
+            </div>
+            <p class="lake-desc">Leży w malowniczych Borach Tucholskich. Popularny ośrodek żeglarski z dobrą infrastrukturą turystyczną. Połączone z Jeziorem Karsińskim.</p>
+            <div class="lake-activities">
+              <span class="activity">⛵ Żeglarstwo</span>
+              <span class="activity">🛶 Kajaki</span>
+              <span class="activity">🏕️ Camping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-radunskie')">
+          <div class="lake-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Jezioro Raduńskie" class="lake-img" style="filter: saturate(1.1);" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Raduńskie Dolne</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">737 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">Kółko</span><span class="ls-key">Raduńskie</span></div>
+            </div>
+            <p class="lake-desc">Część słynnego "Kółka Raduńskiego" – systemu połączonych jezior z Jeziorem Raduńskim Górnym (392 ha). Jeden z najpiękniejszych rejonów do żeglarstwa.</p>
+            <div class="lake-activities">
+              <span class="activity">⛵ Żeglarstwo</span>
+              <span class="activity">🚣 Wioślarstwo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-karsinske')">
+          <div class="lake-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Jezioro Karsińskie" class="lake-img" style="filter: hue-rotate(30deg) saturate(0.9);" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Karsińskie</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">679 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">27 m</span><span class="ls-key">Głębokość max</span></div>
+            </div>
+            <p class="lake-desc">Sąsiaduje z Jeziorem Charzykowskim i połączone jest z nim cieśniną. Doskonałe miejsca do kąpieli i wędkarstwa.</p>
+            <div class="lake-activities">
+              <span class="activity">🎣 Wędkarstwo</span>
+              <span class="activity">🏊 Kąpiel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-ostrzyckie')">
+          <div class="lake-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Jezioro Ostrzyckie" class="lake-img" style="filter: brightness(1.1);" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Ostrzyckie</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">~200 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">KPK</span><span class="ls-key">Lokalizacja</span></div>
+            </div>
+            <p class="lake-desc">Malownicze jezioro w Kaszubskim Parku Krajobrazowym niedaleko Kartuz. Jedno z punktów widokowych i odpoczynku na Szlaku Kaszubskim.</p>
+            <div class="lake-activities">
+              <span class="activity">🚶 Pieszo</span>
+              <span class="activity">🏊 Kąpiel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-mausz')">
+          <div class="lake-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Jezioro Mausz" class="lake-img" style="filter: saturate(0.9) brightness(1.05);" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Mausz</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">>300 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">I klasa</span><span class="ls-key">Czystości</span></div>
+            </div>
+            <p class="lake-desc">Uważane za jedno z najczystszych jezior w całej Polsce. Wyróżnia się wyjątkową czystością wody i malowniczym otoczeniem lasów.</p>
+            <div class="lake-activities">
+              <span class="activity">🏊 Kąpiel</span>
+              <span class="activity">🎣 Wędkarstwo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake-card" onclick="openModal('lake-lebsko')">
+          <div class="lake-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Jezioro Łebsko" class="lake-img" style="filter: hue-rotate(-10deg);" />
+          </div>
+          <div class="lake-body">
+            <h3 class="lake-name">Jezioro Łebsko</h3>
+            <div class="lake-stats">
+              <div class="lake-stat"><span class="ls-val">~7055 ha</span><span class="ls-key">Powierzchnia</span></div>
+              <div class="lake-stat"><span class="ls-val">3.</span><span class="ls-key">w Polsce</span></div>
+            </div>
+            <p class="lake-desc">Największe polskie jezioro przybrzeżne, trzecie co do wielkości w Polsce. Leży na terenie Słowińskiego Parku Narodowego, słynącego z ruchomych wydm.</p>
+            <div class="lake-activities">
+              <span class="activity">🦅 Ornitologia</span>
+              <span class="activity">🚶 Przyroda</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTING PLACES -->
+  <section class="section bg-light" id="places">
+    <div class="container">
+      <div class="section-label">Atrakcje</div>
+      <h2 class="section-title">Ciekawe miejsca</h2>
+      <p class="section-desc">Od najstarszego skansenu w Polsce po tajemnicze kamienne kręgi – Kaszuby skrywają wiele skarbów.</p>
+
+      <div class="places-filter">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Wszystkie</button>
+        <button class="filter-btn" data-filter="naturalne" id="filter-nat">🌿 Naturalne</button>
+        <button class="filter-btn" data-filter="historyczne" id="filter-hist">🏛️ Historyczne</button>
+        <button class="filter-btn" data-filter="kulturalne" id="filter-cult">🎭 Kulturalne</button>
+      </div>
+
+      <div class="places-grid" id="places-grid">
+
+        <article class="place-card" data-category="historyczne kulturalne" onclick="openModal('place-skansen')">
+          <div class="place-img-wrap">
+            <img src="assets/skansen_wdzydze.png" alt="Skansen Wdzydze" class="place-img" />
+            <span class="place-cat-badge">🏛️ Skansen</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Kaszubski Park Etnograficzny we Wdzydzach</h3>
+            <div class="place-location">📍 Wdzydze Kiszewskie</div>
+            <p class="place-desc">Najstarszy skansen w Polsce (założony 1906 r.). Prezentuje ponad 50 obiektów architektury ludowej Kaszub i Kociewia z XVII–XIX wieku. Obowiązkowy punkt dla miłośników historii.</p>
+            <div class="place-info">
+              <span>⭐ 4.8/5</span>
+              <span>🕐 2–4 godziny</span>
+              <span>💰 Bilet: ~20 zł</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="historyczne naturalne" onclick="openModal('place-kregi')">
+          <div class="place-img-wrap">
+            <img src="assets/kamienne_kregi.png" alt="Kamienne Kręgi Węsiory" class="place-img" />
+            <span class="place-cat-badge">🪨 Prehistoria</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Kamienne Kręgi w Węsiorach</h3>
+            <div class="place-location">📍 Węsiory, gm. Sulęczyno</div>
+            <p class="place-desc">Tajemnicze cmentarzysko Gotów i Gepidów z I–III w. n.e. Kilkanaście kamiennych kręgów i kurhanów ukrytych w lesie. Uznawane przez niektórych za miejsca mocy – kaszubskie Stonehenge.</p>
+            <div class="place-info">
+              <span>⭐ 4.6/5</span>
+              <span>🕐 1–2 godziny</span>
+              <span>💰 Wstęp wolny</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="naturalne" onclick="openModal('place-wiezyce')">
+          <div class="place-img-wrap">
+            <img src="assets/wiezyce_tower.png" alt="Wieżyca" class="place-img" />
+            <span class="place-cat-badge">🏔️ Punkt widokowy</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Wieżyca – wieża widokowa</h3>
+            <div class="place-location">📍 Szymbark k. Kartuz</div>
+            <p class="place-desc">Najwyższy punkt Niżu Środkowoeuropejskiego (329 m n.p.m.). Drewniana wieża widokowa im. Jana Pawła II oferuje panoramę na całe Kaszuby i – w pogodne dni – widok na Zatokę Gdańską.</p>
+            <div class="place-info">
+              <span>⭐ 4.7/5</span>
+              <span>🕐 ~1 godzina</span>
+              <span>💰 Wstęp wolny</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="historyczne kulturalne" onclick="openModal('place-kartuzy')">
+          <div class="place-img-wrap">
+            <img src="assets/skansen_wdzydze.png" alt="Kolegiata Kartuska" class="place-img" style="filter: hue-rotate(30deg) saturate(0.8);" />
+            <span class="place-cat-badge">⛪ Zabytek</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Kolegiata Kartuska</h3>
+            <div class="place-location">📍 Kartuzy</div>
+            <p class="place-desc">Dawny kompleks Kartuzów z XIV wieku. Kościół wyróżnia się unikalnym dachem w kształcie wieka trumny – symbolem zakonnej medytacji nad przemijaniem. Wpisany do rejestru zabytków.</p>
+            <div class="place-info">
+              <span>⭐ 4.5/5</span>
+              <span>🕐 1 godzina</span>
+              <span>💰 Wstęp wolny</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="kulturalne historyczne" onclick="openModal('place-bedomin')">
+          <div class="place-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Muzeum Hymnu" class="place-img" style="filter: saturate(0.8) brightness(0.95);" />
+            <span class="place-cat-badge">🎼 Muzeum</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Muzeum Hymnu Narodowego w Będominie</h3>
+            <div class="place-location">📍 Będomin, gm. Kościerzyna</div>
+            <p class="place-desc">Miejsce urodzenia Józefa Wybickiego, autora słów "Mazurka Dąbrowskiego". Muzeum prezentuje historię polskiego hymnu oraz życie wybitnego Kaszuba i patrioty.</p>
+            <div class="place-info">
+              <span>⭐ 4.4/5</span>
+              <span>🕐 1–2 godziny</span>
+              <span>💰 Bilet: ~15 zł</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="kulturalne historyczne" onclick="openModal('place-bytow')">
+          <div class="place-img-wrap">
+            <img src="assets/skansen_wdzydze.png" alt="Zamek Bytów" class="place-img" style="filter: hue-rotate(200deg) saturate(0.7);" />
+            <span class="place-cat-badge">🏰 Zamek</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Zamek Krzyżacki w Bytowie</h3>
+            <div class="place-location">📍 Bytów</div>
+            <p class="place-desc">Dawna twierdza krzyżacka z XIV wieku, jedna z niewielu dobrze zachowanych w Polsce. Mieści dziś muzeum regionalne. Całoroczna atrakcja turystyczna z ekspozycją historyczną.</p>
+            <div class="place-info">
+              <span>⭐ 4.6/5</span>
+              <span>🕐 2–3 godziny</span>
+              <span>💰 Bilet: ~18 zł</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="kulturalne historyczne" onclick="openModal('place-szymbark')">
+          <div class="place-img-wrap">
+            <img src="assets/skansen_wdzydze.png" alt="Centrum Edukacji Szymbark" class="place-img" style="filter: saturate(1.1);" />
+            <span class="place-cat-badge">🏗️ Centrum</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Centrum Edukacji i Promocji w Szymbarku</h3>
+            <div class="place-location">📍 Szymbark</div>
+            <p class="place-desc">Atrakcja z "Domem do Góry Nogami", "Domem Sybiraka" oraz Najdłuższą Deską Świata (36,83 m). Skansen ludowy z unikalnymi eksponatami z historii regionalnej i Syberii.</p>
+            <div class="place-info">
+              <span>⭐ 4.7/5</span>
+              <span>🕐 2–4 godziny</span>
+              <span>💰 Bilet: ~25 zł</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="naturalne" onclick="openModal('place-slowinski')">
+          <div class="place-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Słowiński Park Narodowy" class="place-img" style="filter: hue-rotate(-20deg) saturate(1.2);" />
+            <span class="place-cat-badge">🏜️ Park Narodowy</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Słowiński Park Narodowy</h3>
+            <div class="place-location">📍 Łeba / Smołdzino</div>
+            <p class="place-desc">Jeden z najpiękniejszych parków w Polsce. Słynący z ruchomych wydm (Czołpińskiej i Łąckiej), dzikich plaż, jezior Łebsko i Gardno. Wpisany na listę Rezerwatów Biosfery UNESCO.</p>
+            <div class="place-info">
+              <span>⭐ 4.9/5</span>
+              <span>🕐 Cały dzień</span>
+              <span>💰 Bilet: ~23 zł</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="kulturalne" onclick="openModal('place-kalwaria')">
+          <div class="place-img-wrap">
+            <img src="assets/skansen_wdzydze.png" alt="Kalwaria Wejherowska" class="place-img" style="filter: hue-rotate(60deg) saturate(0.8) brightness(0.95);" />
+            <span class="place-cat-badge">✝️ Pielgrzymki</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Kalwaria Wejherowska</h3>
+            <div class="place-location">📍 Wejherowo</div>
+            <p class="place-desc">"Kaszubska Jerozolima" – XVII-wieczny kompleks 26 kaplic i kościołów rozsianych po lasach i wzgórzach. Ważne miejsce pielgrzymek i spacerów. Wpisany na Pomnik Historii.</p>
+            <div class="place-info">
+              <span>⭐ 4.5/5</span>
+              <span>🕐 2–3 godziny</span>
+              <span>💰 Wstęp wolny</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="naturalne" onclick="openModal('place-lasy-mirachowskie')">
+          <div class="place-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Lasy Mirachowskie" class="place-img" />
+            <span class="place-cat-badge">🌲 Rezerwat</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Lasy Mirachowskie</h3>
+            <div class="place-location">📍 Mirachowo, gm. Kartuzy</div>
+            <p class="place-desc">Jeden z największych kompleksów leśnych Kaszub z kilkoma rezerwatami przyrody: "Szczelina Lechicka" i "Lubygość". Idealne miejsce do pieszych wędrówek i obserwacji przyrody.</p>
+            <div class="place-info">
+              <span>⭐ 4.6/5</span>
+              <span>🕐 Cały dzień</span>
+              <span>💰 Wstęp wolny</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="kulturalne" onclick="openModal('place-muzeum-akordeonu')">
+          <div class="place-img-wrap">
+            <img src="assets/skansen_wdzydze.png" alt="Muzeum Akordeonu" class="place-img" style="filter: hue-rotate(120deg) saturate(0.9);" />
+            <span class="place-cat-badge">🎹 Muzeum</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Muzeum Akordeonu w Kościerzynie</h3>
+            <div class="place-location">📍 Kościerzyna</div>
+            <p class="place-desc">Jedno z niewielu w Polsce muzeów poświęconych historii akordeonu – instrumentu silnie związanego z kaszubską kulturą muzyczną. Unikalna ekspozycja instrumentów z całego świata.</p>
+            <div class="place-info">
+              <span>⭐ 4.3/5</span>
+              <span>🕐 1–2 godziny</span>
+              <span>💰 Bilet: ~12 zł</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="naturalne" onclick="openModal('place-wdzydzki-park')">
+          <div class="place-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Wdzydzki Park Krajobrazowy" class="place-img" style="filter: saturate(1.3);" />
+            <span class="place-cat-badge">🌿 Park</span>
+          </div>
+          <div class="place-body">
+            <h3 class="place-name">Wdzydzki Park Krajobrazowy</h3>
+            <div class="place-location">📍 Wdzydze Tucholskie</div>
+            <p class="place-desc">Obszar chroniony obejmujący kompleks Jezior Wdzydzkich (Wdzydze, Jelenie, Radolne, Gołuń). Piesze szlaki, ścieżki edukacyjne, kajaki i obserwacja przyrody.</p>
+            <div class="place-info">
+              <span>⭐ 4.7/5</span>
+              <span>🕐 Cały dzień</span>
+              <span>💰 Wstęp wolny</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="section bg-map" id="map">
+    <div class="container">
+      <div class="section-label">Mapa</div>
+      <h2 class="section-title">Mapa Kaszub</h2>
+      <p class="section-desc">Planuj swoją przygodę z interaktywną mapą najważniejszych atrakcji regionu.</p>
+      <div class="map-wrapper">
+        <iframe
+          title="Mapa Kaszub"
+          id="kaszuby-map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=17.2%2C53.8%2C18.6%2C54.7&layer=mapnik&marker=54.2%2C18.0"
+          style="width:100%;height:500px;border:none;border-radius:16px;"
+          loading="lazy"
+        ></iframe>
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot dot-trail"></span>Szlaki piesze</div>
+          <div class="legend-item"><span class="legend-dot dot-bike"></span>Szlaki rowerowe</div>
+          <div class="legend-item"><span class="legend-dot dot-lake"></span>Jeziora</div>
+          <div class="legend-item"><span class="legend-dot dot-place"></span>Atrakcje</div>
+        </div>
+        <div class="map-quick-links">
+          <h4>Szybka nawigacja do:</h4>
+          <div class="quick-links-row">
+            <a href="https://www.google.com/maps/search/Jezioro+Wdzydze" target="_blank" class="quick-link">📍 J. Wdzydze</a>
+            <a href="https://www.google.com/maps/search/Wieżyca+Szymbark" target="_blank" class="quick-link">📍 Wieżyca</a>
+            <a href="https://www.google.com/maps/search/Skansen+Wdzydze+Kiszewskie" target="_blank" class="quick-link">📍 Skansen Wdzydze</a>
+            <a href="https://www.google.com/maps/search/Kamienne+Kręgi+Węsiory" target="_blank" class="quick-link">📍 Kręgi Węsiory</a>
+            <a href="https://www.google.com/maps/search/Zamek+Bytów" target="_blank" class="quick-link">📍 Zamek Bytów</a>
+            <a href="https://www.google.com/maps/search/Kalwaria+Wejherowska" target="_blank" class="quick-link">📍 Kalwaria Wejherowska</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🌿 Kaszuby<strong>Explorer</strong></div>
+          <p>Odkryj piękno Kaszub – Krainy Tysiąca Jezior. Przewodnik turystyczny w języku polskim.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Odkrywaj</h4>
+          <ul>
+            <li><a href="#trails">Szlaki piesze</a></li>
+            <li><a href="#trails">Szlaki rowerowe</a></li>
+            <li><a href="#lakes">Jeziora</a></li>
+            <li><a href="#places">Ciekawe miejsca</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Regiony</h4>
+          <ul>
+            <li>Kartuzy i okolice</li>
+            <li>Kościerzyna</li>
+            <li>Bytów</li>
+            <li>Wejherowo</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Przydatne linki</h4>
+          <ul>
+            <li><a href="https://kpk.org.pl" target="_blank">Kaszubski Park Krajobrazowy</a></li>
+            <li><a href="https://www.lscdn.pl" target="_blank">Wdzydzki Park Krajobrazowy</a></li>
+            <li><a href="https://www.wirtualneszlaki.pl" target="_blank">Wirtualne Szlaki</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Kaszuby Explorer · Dane turystyczne na podstawie kpk.org.pl, wirtualneszlaki.pl i innych źródeł.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
