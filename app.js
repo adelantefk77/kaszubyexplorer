@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 });
 
 function highlightNavOnScroll() {
-  const sections = ['explore','trails','lakes','places','map'];
+  const sections = ['explore', 'trails', 'lakes', 'places', 'map'];
   let current = '';
   for (const id of sections) {
     const el = document.getElementById(id);
@@ -483,6 +483,22 @@ const modalData = {
     ],
     tags: ['Park Krajobrazowy', 'Natura 2000', 'Kajaki', 'Ścieżki', 'J. Wdzydze'],
   },
+  'lake-wielewskie': {
+    img: 'assets/jezioro_wielewskie.png',
+    badge: 'Jezioro · I klasa czystości',
+    title: 'Jezioro Wielewskie',
+    subtitle: 'Wiele, gm. Karsin · Wdzydzki Park Krajobrazowy',
+    desc: 'Jezioro Wielewskie to wyjątkowo czyste jezioro morenowe na Kaszubach, leżące na południowym skraju Wdzydzkiego Parku Krajobrazowego. Nad jego północno-wschodnim brzegiem leży wieś Wiele. Woda zaliczana jest do I klasy czystości, a przezroczystość sięga aż 50 metrów – czyni to jezioro jednym z ulubionych miejsc nurków w Polsce. Na plaży w Wielu działa strzeżone kąpielisko (10:00–18:00) z piaszczystym dnem, placem zabaw i boiskiem do piłki plażowej. W wodach jeziernych żyją szczupaki, okonie, leszcze, liny i płocie. Zimą przy silnych mrozach popularne jest wędkarstwo podlodowe, łyżwiarstwo i hokej.',
+    stats: [
+      { val: '155 ha', key: 'Powierzchnia' },
+      { val: '40,5 m', key: 'Głębokość max' },
+      { val: '11,8 m', key: 'Głębokość śred.' },
+      { val: 'I klasa', key: 'Czystość wody' },
+      { val: '~50 m', key: 'Przezroczystość' },
+      { val: 'WPK', key: 'Park krajobrazowy' },
+    ],
+    tags: ['I klasa czystości', 'Nurkowanie', 'Kąpielisko', 'Wędkarstwo', 'Kajaki', 'WPK'],
+  },
 };
 
 // ---- MODAL ENGINE ----
@@ -497,8 +513,8 @@ function openModal(id) {
       <h2 class="modal-title">${data.title}</h2>
       ${data.subtitle ? `<div class="modal-subtitle">${data.subtitle}</div>` : ''}
       <p class="modal-desc">${data.desc}</p>
-      ${data.stats ? `<div class="modal-stats-row">${data.stats.map(s=>`<div class="modal-stat-item"><span class="msi-val">${s.val}</span><span class="msi-key">${s.key}</span></div>`).join('')}</div>` : ''}
-      ${data.tags ? `<div class="modal-tags">${data.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>` : ''}
+      ${data.stats ? `<div class="modal-stats-row">${data.stats.map(s => `<div class="modal-stat-item"><span class="msi-val">${s.val}</span><span class="msi-key">${s.key}</span></div>`).join('')}</div>` : ''}
+      ${data.tags ? `<div class="modal-tags">${data.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : ''}
     </div>
   `;
   document.getElementById('modal-overlay').classList.add('open');
