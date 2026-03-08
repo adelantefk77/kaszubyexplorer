@@ -499,6 +499,168 @@ const modalData = {
     ],
     tags: ['I klasa czystości', 'Nurkowanie', 'Kąpielisko', 'Wędkarstwo', 'Kajaki', 'WPK'],
   },
+  // KAYAK TRAILS
+  'kayak-1': {
+    img: 'assets/jezioro_wielewskie.png',
+    badge: 'Kajaki · Popularny',
+    title: 'Kółko Raduńskie i Radunia',
+    subtitle: 'Przez "Kaszubskie Morze"',
+    desc: 'Najpopularniejszy szlak kajakowy Kaszub, ciągnący się przez połączone jeziora Kółka Raduńskiego. Gwarantuje piękne widoki i spokojną, relaksującą podróż. W dolnym odcinku rzeka Radunia oferuje bardziej dynamiczny spływ o charakterze podgórskim.',
+    stats: [
+      { val: '~40 km', key: 'Długość jeziorna' },
+      { val: 'Łatwy', key: 'Trudność' },
+      { val: '2-3 dni', key: 'Czas spływu' },
+    ],
+    tags: ['Kajaki', 'Kółko Raduńskie', 'Jeziora', 'Rzeka Radunia']
+  },
+  'kayak-2': {
+    img: 'assets/kaszuby_hero.png',
+    badge: 'Kajaki · Przygodowy',
+    title: 'Spływ rzeką Słupią',
+    subtitle: 'Bory Tucholskie → Bałtyk',
+    desc: 'Zróżnicowany szlak o dużym spadku wód, co nadaje mu momentami charakter rzeki górskiej. Prowadzi przez urokliwy Park Krajobrazowy Dolina Słupi. Ze względu na zwalone drzewa i bystrza, wymaga doświadczenia w kajakarstwie.',
+    stats: [
+      { val: '~133 km', key: 'Długość całkowita' },
+      { val: 'Średni / Trudny', key: 'Trudność' },
+      { val: '5-7 dni', key: 'Czas spływu' },
+    ],
+    tags: ['Rzeka Słupia', 'Park Krajobrazowy', 'Przygoda', 'Doświadczeni']
+  },
+  'kayak-3': {
+    img: 'assets/jezioro_wdzydze.png',
+    badge: 'Kajaki · Historyczny',
+    title: 'Spływ do Bałtyku Piaśnicą',
+    subtitle: 'Jezioro Żarnowieckie → Dębki',
+    desc: 'Bardzo malowniczy i niezwykle spokojny szlak, często nazywany "Spływem do morza". Rzeka leniwie meandruje przez rezerwat "Piaśnickie Łąki" prosto do Bałtyku. W sam raz na wyjazd z rodziną.',
+    stats: [
+      { val: '~7 km', key: 'Długość' },
+      { val: 'Bardzo łatwy', key: 'Trudność' },
+      { val: '2-3 godziny', key: 'Czas spływu' },
+    ],
+    tags: ['Piaśnica', 'Jezioro Żarnowieckie', 'Morze Bałtyckie', 'Rodzinny']
+  },
+  'kayak-4': {
+    img: 'assets/szlak_kaszubski.png',
+    badge: 'Kajaki · Malowniczy',
+    title: 'Szlak Kajakowy Wieprza',
+    subtitle: 'Dzika i naturalna',
+    desc: 'Rzeka o bardzo zmiennym charakterze – od bystrych odcinków po leniwie płynące wody. Miejscami koryto zachowało zupełnie dziki charakter. Świetna propozycja dla poszukujących wyzwań i kontaktu z niezmienioną przez człowieka naturą.',
+    stats: [
+      { val: '~112 km', key: 'Długość całkowita' },
+      { val: 'Zmienny (Średni)', key: 'Trudność' },
+      { val: '4-6 dni', key: 'Czas spływu' },
+    ],
+    tags: ['Wieprza', 'Dzika rzeka', 'Natura', 'Krajobrazy']
+  },
+  // RESTAURANTS
+  'rest-1': {
+    img: 'assets/restauracja_mulk_checz.png',
+    badge: 'Restauracja · Kaszubska',
+    title: 'Mùlk Chëcz Kaszëbskô',
+    subtitle: 'Tradycja i Smak',
+    desc: 'Prawdziwie kaszubska gospoda, w której poczujesz niezapomniany klimat regionu. Serwowane są tu regionalne potrawy przygotowywane według tradycyjnych przepisów. Na szczególną uwagę zasługują potrawy z gęsiny, ryby oraz domowe przetwory.',
+    stats: [
+      { val: 'Regionalna', key: 'Kuchnia' },
+      { val: '$$', key: 'Cena' },
+    ],
+    tags: ['Tradycyjna', 'Kaszubska', 'Gęsina', 'Klimatyczna']
+  },
+  'rest-2': {
+    img: 'assets/restauracja_nordowi_mol.png',
+    badge: 'Restauracja · Słynna',
+    title: 'Nordowi Mól',
+    subtitle: 'Celina i Jacek',
+    desc: 'Słynna karczma łącząca w sobie najlepsze cechy kuchni kaszubskiej i staropolskiej. Miejsce jest pełne uroku, urządzone w regionalnym stylu i cechuje się fantastyczną, gościnną atmosferą. Zawsze świeże i lokalne składniki.',
+    stats: [
+      { val: 'Kaszubska/Polska', key: 'Kuchnia' },
+      { val: '$$ - $$$', key: 'Cena' },
+    ],
+    tags: ['Staropolska', 'Lokalne składniki', 'Tradycja', 'Urokliwa']
+  },
+  'rest-3': {
+    img: 'assets/restauracja_pod_syty_gesia.png',
+    badge: 'Restauracja · Gęsina',
+    title: 'Restauracja "Pod Sytą Gęsią"',
+    subtitle: 'Bogactwo Smaków',
+    desc: 'Jeżeli szukasz doskonałej kaszubskiej gęsiny – to jest to miejsce. Restauracja specjalizuje się w daniach opartych na gęsinie, przyrządzanej na dziesiątki autorskich sposobów i łączonej z sezonowymi owocami oraz ziołami.',
+    stats: [
+      { val: 'Specjalności Regionalne', key: 'Kuchnia' },
+      { val: '$$$', key: 'Cena' },
+    ],
+    tags: ['Gęsina', 'Autorskie dania', 'Elegancka', 'Sezonowe menu']
+  },
+  'rest-4': {
+    img: 'assets/restauracja_karczma_viking.png',
+    badge: 'Karczma · Unikatowa',
+    title: 'Karczma Viking',
+    subtitle: 'Niezwykły klimat',
+    desc: 'Wspaniałe miejsce, które architekturą wystrojem nawiązuje do skandynawskich czasów. Oprócz tradycyjnych potraw kaszubskich skosztować tu można wybornych pieczeni i dań z ognia. Wieczorem lokal urzeka specyficznym klimatem.',
+    stats: [
+      { val: 'Mięsna / Regionalna', key: 'Kuchnia' },
+      { val: '$$', key: 'Cena' },
+    ],
+    tags: ['Klimatyczna', 'Z ognia', 'Pieczenie', 'Ciekawy wystrój']
+  },
+  'rest-5': {
+    img: 'assets/restauracja_lesny_dwor.png',
+    badge: 'Restauracja · Fine Dining',
+    title: 'Restauracja Biôłi Trus (Leśny Dwór)',
+    subtitle: 'Nowoczesna Kaszubszczyzna',
+    desc: 'Fine-diningowa perła na kulinarnym szlaku Kaszub. Niezwykłe menu degustacyjne pokazuje nowoczesne oblicze lokalnych produktów i smaków. Wspaniałe położenie i eleganckie, nowoczesne wnętrze dodają posiłkowi niepowtarzalnej oprawy.',
+    stats: [
+      { val: 'Fine Dining', key: 'Kuchnia' },
+      { val: '$$$$', key: 'Cena' },
+    ],
+    tags: ['Fine Dining', 'Nowoczesna', 'Menu Degustacyjne', 'Ekskluzywna']
+  },
+  'rest-6': {
+    img: 'assets/restauracja_palac_lebunia.png',
+    badge: 'Pałac · Klasyczna',
+    title: 'Restauracja Pałac Łebunia',
+    subtitle: 'Pałacowa elegancja',
+    desc: 'Miejsce o wspaniałej historii i najwyższym poziomie usług kulinarnych. Dania nawiązujące do czasów świetności pałacu, skomponowane przez doświadczonych szefów kuchni. Wyjątkowe otoczenie zachęca do długiego relaksu i delektowania się każdą chwilą.',
+    stats: [
+      { val: 'Polska / Autorska', key: 'Kuchnia' },
+      { val: '$$$', key: 'Cena' },
+    ],
+    tags: ['Pałac', 'Elegancka', 'Autorska', 'Historia']
+  },
+  'rest-7': {
+    img: 'assets/restauracja_grzybowski_mlyn.png',
+    badge: 'Karczma · Nad rzeką',
+    title: 'Karczma Grzybowski Młyn',
+    subtitle: 'Szum wody i las',
+    desc: 'Bajecznie ulokowana karczma w starym młynie, otoczona lasem. Daje możliwość zakosztowania prawdziwej kaszubskiej kuchni ze wspaniałym widokiem. Idealne stoisko pit-stopowe na wycieczce rowerowej lub samochodowej objazdowce Kaszub.',
+    stats: [
+      { val: 'Kaszubska', key: 'Kuchnia' },
+      { val: '$$', key: 'Cena' },
+    ],
+    tags: ['Młyn', 'Przyroda', 'Tradycja', 'Widokowa']
+  },
+  'rest-8': {
+    img: 'assets/restauracja_chata_kaszubska.png',
+    badge: 'Gospoda · Sielanka',
+    title: 'Gospoda Kaszubska Chata',
+    subtitle: 'Domowe jedzenie',
+    desc: 'Cudowne, ciepłe wnętrze przypominające wiejską chatę z duszą. Specjalnością gospody są ręcznie lepione pierogi w wielu wariacjach, wyśmienite zupy oparte na domowych bulionach i dania z grzybów prosto z kaszubskiego lasu.',
+    stats: [
+      { val: 'Tradycyjna', key: 'Kuchnia' },
+      { val: '$ - $$', key: 'Cena' },
+    ],
+    tags: ['Sielanka', 'Pierogi', 'Grzyby', 'Domowa']
+  },
+  'rest-9': {
+    img: 'assets/restauracja_rybarnia.png',
+    badge: 'Smażalnia / Restauracja',
+    title: 'Ryby nad Jeziorem',
+    subtitle: 'Świeże smaki',
+    desc: 'Genialne miejsce dla pasjonatów ryb i dobrego jedzenia. Smażalnia oraz restauracja leżąca bezpośrednio przy jeziorze, dysponująca letnimi tarasami. Smak zawsze świeżego łososia, sielawy, czy szczupaka w akompaniamencie jeziornego wiatru - bezcenny.',
+    stats: [
+      { val: 'Ryby', key: 'Kuchnia' },
+      { val: '$$', key: 'Cena' },
+    ],
+    tags: ['Ryby', 'Nad jeziorem', 'Smażalnia', 'Świeżość']
+  }
 };
 
 // ---- MODAL ENGINE ----

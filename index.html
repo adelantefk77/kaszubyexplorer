@@ -127,6 +127,7 @@
             <div class="tabs" id="trail-tabs">
                 <button class="tab active" data-tab="hiking" id="tab-hiking">🥾 Piesze</button>
                 <button class="tab" data-tab="cycling" id="tab-cycling">🚴 Rowerowe</button>
+                <button class="tab" data-tab="kayak" id="tab-kayak">🛶 Kajakowe</button>
             </div>
 
             <!-- Hiking Trails -->
@@ -283,134 +284,310 @@
                             <span>📏 ~76 km</span>
                             <span>⏱️ 1–2 dni</span>
                         </div>
-                        <p class="trail-desc">Spektakularny szlak rowerowy wzdłuż brzegu Zatoki Puckiej. Prowadzi z
-                            Gdyni przez Swarzewo, Puck, Władysławowo, Chałupy, Kuźnicę, Jastarnię, Juratę aż do Helu.
-                        </p>
+                        <p class="trail-desc">Malownicza trasa w dużej mierze prowadzona wzdłuż morskich brzegów Zatoki
+                            Puckiej, na odcinku Gdynia – Hel, łącząca asfalt, szutry i drogi leśne.</p>
                         <div class="trail-tags">
+                            <span class="tag">Zatoka Pucka</span>
                             <span class="tag">Hel</span>
                             <span class="tag">Morze</span>
-                            <span class="tag">Asfalt</span>
                         </div>
                     </div>
                 </article>
 
                 <article class="trail-card" onclick="openModal('bike-2')">
                     <div class="trail-img-wrap">
-                        <img src="assets/szlak_kaszubski.png" alt="Kaszubska Marszruta" class="trail-img"
-                            style="filter: saturate(1.3) brightness(0.95);" />
-                        <span class="trail-badge badge-green">Zielony</span>
-                        <span class="trail-difficulty diff-easy">Łatwy</span>
+                        <img src="assets/szlaki_rowerowe.png" alt="Pętla Czarlina" class="trail-img" />
+                        <span class="trail-badge badge-green">Zielona</span>
+                        <span class="trail-difficulty diff-easy">Łatwa</span>
                     </div>
                     <div class="trail-body">
-                        <h3 class="trail-name">Kaszubska Marszruta</h3>
+                        <h3 class="trail-name">Pętla Czarlina</h3>
                         <div class="trail-meta">
-                            <span>📏 4 trasy w Borach Tucholskich</span>
-                            <span>⏱️ Rodzinny</span>
+                            <span>📏 ~13 km</span>
+                            <span>⏱️ 1.5 - 2 godziny</span>
                         </div>
-                        <p class="trail-desc">System czterech szlaków rowerowych w Borach Tucholskich, odpowiedni dla
-                            rodzin z dziećmi. Trasy zachwycają widokami i pełne są dzikiej zwierzyny.</p>
+                        <p class="trail-desc">Przyjemny szlak wokół jezior Słupinko, Jelenie i Radolne. Trasa położona
+                            we Wdzydzkim Parku Krajobrazowym, idealna dla rodzin z dziećmi.</p>
                         <div class="trail-tags">
-                            <span class="tag">Bory Tucholskie</span>
-                            <span class="tag">Rodziny</span>
-                            <span class="tag">Natura</span>
+                            <span class="tag">Jeziora Wdzydzkie</span>
+                            <span class="tag">Dla rodzin</span>
+                            <span class="tag">Lasy</span>
                         </div>
                     </div>
                 </article>
 
                 <article class="trail-card" onclick="openModal('bike-3')">
                     <div class="trail-img-wrap">
-                        <img src="assets/jezioro_wdzydze.png" alt="Dookoła Jezior Wdzydzkich" class="trail-img"
-                            style="filter: hue-rotate(20deg);" />
-                        <span class="trail-badge badge-red">Czerwony</span>
+                        <img src="assets/szlaki_rowerowe.png" alt="Pętla Parchowska" class="trail-img"
+                            style="filter: hue-rotate(60deg);" />
+                        <span class="trail-badge badge-yellow">Żółta</span>
                         <span class="trail-difficulty diff-medium">Średni</span>
                     </div>
                     <div class="trail-body">
-                        <h3 class="trail-name">Dookoła Jezior Wdzydzkich</h3>
+                        <h3 class="trail-name">Pętla Parchowska</h3>
                         <div class="trail-meta">
-                            <span>📏 48,5 km</span>
-                            <span>⏱️ 1 dzień</span>
+                            <span>📏 ~24 km</span>
+                            <span>⏱️ 2 - 3 godziny</span>
                         </div>
-                        <p class="trail-desc">Rowerowa pętla wokół kompleksu Jezior Wdzydzkich – największego akwenu
-                            Kaszub. Widoki na "Kaszubskie Morze" z różnych perspektyw.</p>
+                        <p class="trail-desc">Szlak biegnący wokół Jeziora Mausz. Trasa nieco bardziej pofałdowana,
+                            oferująca piękne panoramy i ciszę z dala od głównych szos.</p>
                         <div class="trail-tags">
-                            <span class="tag">J. Wdzydze</span>
-                            <span class="tag">Pętla</span>
-                            <span class="tag">Widoki</span>
+                            <span class="tag">Jezioro Mausz</span>
+                            <span class="tag">Widokowa</span>
+                            <span class="tag">Pagórkowata</span>
                         </div>
                     </div>
                 </article>
 
                 <article class="trail-card" onclick="openModal('bike-4')">
                     <div class="trail-img-wrap">
-                        <img src="assets/szlak_kaszubski.png" alt="Szlak Geologiczny" class="trail-img"
-                            style="filter: hue-rotate(80deg) saturate(0.8);" />
-                        <span class="trail-badge badge-yellow">Żółty</span>
+                        <img src="assets/kaszuby_hero.png" alt="Kaszubska Marszruta" class="trail-img"
+                            style="filter: saturate(1.5);" />
+                        <span class="trail-badge badge-green">Zielony</span>
                         <span class="trail-difficulty diff-easy">Łatwy</span>
                     </div>
                     <div class="trail-body">
-                        <h3 class="trail-name">Szlak Geologiczny</h3>
+                        <h3 class="trail-name">Kaszubska Marszruta</h3>
                         <div class="trail-meta">
-                            <span>📏 30 km</span>
-                            <span>⏱️ 1 dzień</span>
+                            <span>📏 Ponad 200 km tras</span>
+                            <span>⏱️ Różne odcinki</span>
                         </div>
-                        <p class="trail-desc">Rowerowa trasa przez Wdzydze Tucholskie, Cisewie, Bąk, Karsin, Wiele i
-                            Przytarnię. Pokazuje geologię polodowcowego krajobrazu Kaszub.</p>
+                        <p class="trail-desc">Sieć pięknych szlaków w okolicach Borów Tucholskich (m.in. powiat
+                            chojnicki). Większość tras to wydzielone ścieżki leśne lub szutrowe idealne na rowery,
+                            często asfaltowe lub z kostki, z dala od aut.</p>
                         <div class="trail-tags">
-                            <span class="tag">Edukacja</span>
-                            <span class="tag">Geologia</span>
-                            <span class="tag">Wiele</span>
+                            <span class="tag">Bory Tucholskie</span>
+                            <span class="tag">Chojnice</span>
+                            <span class="tag">Bezpieczne</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Kayak Trails -->
+            <div class="trails-grid hidden" id="tab-content-kayak">
+                <article class="trail-card" onclick="openModal('kayak-1')">
+                    <div class="trail-img-wrap">
+                        <img src="assets/jezioro_wielewskie.png" alt="Szlak Kajakowy Radunia" class="trail-img" />
+                        <span class="trail-badge badge-blue">Radunia</span>
+                        <span class="trail-difficulty diff-easy">Łatwy / Średni</span>
+                    </div>
+                    <div class="trail-body">
+                        <h3 class="trail-name">Kółko Raduńskie i Radunia</h3>
+                        <div class="trail-meta">
+                            <span>📏 ~98 km (rzeka) / ~40 km (Kółko)</span>
+                            <span>⏱️ Od kilku godzin do kilku dni</span>
+                        </div>
+                        <p class="trail-desc">Szlak prowadzący wzdłuż czystych jezior "Szwajcarii Kaszubskiej". System
+                            polodowcowych jezior rynnowych łączy się w ponad 40-kilometrowy szlak kajakowy zwany
+                            "Kółkiem Raduńskim".</p>
+                        <div class="trail-tags">
+                            <span class="tag">Jeziorowy</span>
+                            <span class="tag">Szwajcaria Kaszubska</span>
+                            <span class="tag">Popularny</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="trail-card" onclick="openModal('bike-5')">
+                <article class="trail-card" onclick="openModal('kayak-2')">
                     <div class="trail-img-wrap">
-                        <img src="assets/kaszuby_hero.png" alt="Szlak Józefa Wybickiego" class="trail-img"
-                            style="filter: saturate(0.9) brightness(1.05);" />
-                        <span class="trail-badge badge-black">Czarny</span>
-                        <span class="trail-difficulty diff-easy">Łatwy</span>
+                        <img src="assets/jezioro_wdzydze.png" alt="Rzeka Słupia" class="trail-img" />
+                        <span class="trail-badge badge-red">Słupia</span>
+                        <span class="trail-difficulty diff-hard">Trudny (w górnym biegu)</span>
                     </div>
                     <div class="trail-body">
-                        <h3 class="trail-name">Szlak Józefa Wybickiego</h3>
+                        <h3 class="trail-name">Spływ rzeką Słupią</h3>
                         <div class="trail-meta">
-                            <span>📏 ~25 km</span>
-                            <span>⏱️ Półdniowy</span>
+                            <span>📏 ~133 km cały szlak</span>
+                            <span>⏱️ Wielodniowy</span>
                         </div>
-                        <p class="trail-desc">Historyczny szlak prowadzący między Będominem (miejscem urodzenia twórcy
-                            polskiego hymnu) a Sikorzynem. Łączy piękno przyrody z historią narodową.</p>
+                        <p class="trail-desc">Szlak znany z "rynny suleńczyńskiej", gdzie w górnym biegu rzeka ma
+                            charakter niemal górski, bardzo wymagający. W dolnym biegu spokojniejsza, idealna na długie
+                            spływy z licznymi elektrowniami wodnymi.</p>
                         <div class="trail-tags">
-                            <span class="tag">Będomin</span>
-                            <span class="tag">Hymn Polski</span>
-                            <span class="tag">Historia</span>
+                            <span class="tag">Rynna Suleńczyńska</span>
+                            <span class="tag">Szybki nurt</span>
+                            <span class="tag">Park Krajobrazowy</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="trail-card" onclick="openModal('bike-6')">
+                <article class="trail-card" onclick="openModal('kayak-3')">
                     <div class="trail-img-wrap">
-                        <img src="assets/szlak_kaszubski.png" alt="Błękitna Trasa Rowerowa" class="trail-img"
-                            style="filter: hue-rotate(170deg) saturate(0.85);" />
-                        <span class="trail-badge badge-blue">Niebieski</span>
-                        <span class="trail-difficulty diff-easy">Łatwy</span>
+                        <img src="assets/lakes_section_2.png" alt="Piaśnica" class="trail-img" />
+                        <span class="trail-badge badge-green">Piaśnica</span>
+                        <span class="trail-difficulty diff-easy">Bardzo łatwy</span>
                     </div>
                     <div class="trail-body">
-                        <h3 class="trail-name">Błękitna Trasa Rowerowa</h3>
+                        <h3 class="trail-name">Spływ do Bałtyku Piaśnicą</h3>
                         <div class="trail-meta">
-                            <span>📏 36,5 km</span>
-                            <span>⏱️ Półdniowy</span>
+                            <span>📏 ~6 km</span>
+                            <span>⏱️ 2-3 godziny</span>
                         </div>
-                        <p class="trail-desc">Trasa wzdłuż Zatoki Gdańskiej i w okolicach Kaszubskiego Parku
-                            Krajobrazowego. Wydzielone ścieżki rowerowe, minimalne przewyższenia, idealna dla dzieci.
-                        </p>
+                        <p class="trail-desc">Spokojny, rodzinny spływ. Rzeka wypływa z Jeziora Żarnowieckiego i powoli
+                            meandrując pośród łąk Rezerwatu Piaśnickie Łąki, uchodzi prosto do Morza Bałtyckiego w
+                            Dębkach.</p>
                         <div class="trail-tags">
-                            <span class="tag">Zatoka Gdańska</span>
-                            <span class="tag">Ścieżka</span>
-                            <span class="tag">KPK</span>
+                            <span class="tag">Na plażę</span>
+                            <span class="tag">Dla rodzin</span>
+                            <span class="tag">Dębki</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="trail-card" onclick="openModal('kayak-4')">
+                    <div class="trail-img-wrap">
+                        <img src="assets/szlak_kaszubski.png" alt="Rzeka Wieprza" class="trail-img" />
+                        <span class="trail-badge badge-black">Wieprza</span>
+                        <span class="trail-difficulty diff-medium">Średni</span>
+                    </div>
+                    <div class="trail-body">
+                        <h3 class="trail-name">Szlak Kajakowy Wieprza</h3>
+                        <div class="trail-meta">
+                            <span>📏 ~108 km</span>
+                            <span>⏱️ 5-6 dni (całość)</span>
+                        </div>
+                        <p class="trail-desc">Dzikia i spokojna rzeka, wypływająca z Jeziora Białego, idealna dla osób
+                            szukających samotności oraz bliskości natury. Liczne odcinki np. z Glewnika, otoczone gęstym
+                            lasem.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Dzikie Kaszuby</span>
+                            <span class="tag">Natura</span>
+                            <span class="tag">Cisza</span>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
+    </section>
+    <p class="trail-desc">Spektakularny szlak rowerowy wzdłuż brzegu Zatoki Puckiej. Prowadzi z
+        Gdyni przez Swarzewo, Puck, Władysławowo, Chałupy, Kuźnicę, Jastarnię, Juratę aż do Helu.
+    </p>
+    <div class="trail-tags">
+        <span class="tag">Hel</span>
+        <span class="tag">Morze</span>
+        <span class="tag">Asfalt</span>
+    </div>
+    </div>
+    </article>
+
+    <article class="trail-card" onclick="openModal('bike-2')">
+        <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Kaszubska Marszruta" class="trail-img"
+                style="filter: saturate(1.3) brightness(0.95);" />
+            <span class="trail-badge badge-green">Zielony</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+        </div>
+        <div class="trail-body">
+            <h3 class="trail-name">Kaszubska Marszruta</h3>
+            <div class="trail-meta">
+                <span>📏 4 trasy w Borach Tucholskich</span>
+                <span>⏱️ Rodzinny</span>
+            </div>
+            <p class="trail-desc">System czterech szlaków rowerowych w Borach Tucholskich, odpowiedni dla
+                rodzin z dziećmi. Trasy zachwycają widokami i pełne są dzikiej zwierzyny.</p>
+            <div class="trail-tags">
+                <span class="tag">Bory Tucholskie</span>
+                <span class="tag">Rodziny</span>
+                <span class="tag">Natura</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="trail-card" onclick="openModal('bike-3')">
+        <div class="trail-img-wrap">
+            <img src="assets/jezioro_wdzydze.png" alt="Dookoła Jezior Wdzydzkich" class="trail-img"
+                style="filter: hue-rotate(20deg);" />
+            <span class="trail-badge badge-red">Czerwony</span>
+            <span class="trail-difficulty diff-medium">Średni</span>
+        </div>
+        <div class="trail-body">
+            <h3 class="trail-name">Dookoła Jezior Wdzydzkich</h3>
+            <div class="trail-meta">
+                <span>📏 48,5 km</span>
+                <span>⏱️ 1 dzień</span>
+            </div>
+            <p class="trail-desc">Rowerowa pętla wokół kompleksu Jezior Wdzydzkich – największego akwenu
+                Kaszub. Widoki na "Kaszubskie Morze" z różnych perspektyw.</p>
+            <div class="trail-tags">
+                <span class="tag">J. Wdzydze</span>
+                <span class="tag">Pętla</span>
+                <span class="tag">Widoki</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="trail-card" onclick="openModal('bike-4')">
+        <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Szlak Geologiczny" class="trail-img"
+                style="filter: hue-rotate(80deg) saturate(0.8);" />
+            <span class="trail-badge badge-yellow">Żółty</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+        </div>
+        <div class="trail-body">
+            <h3 class="trail-name">Szlak Geologiczny</h3>
+            <div class="trail-meta">
+                <span>📏 30 km</span>
+                <span>⏱️ 1 dzień</span>
+            </div>
+            <p class="trail-desc">Rowerowa trasa przez Wdzydze Tucholskie, Cisewie, Bąk, Karsin, Wiele i
+                Przytarnię. Pokazuje geologię polodowcowego krajobrazu Kaszub.</p>
+            <div class="trail-tags">
+                <span class="tag">Edukacja</span>
+                <span class="tag">Geologia</span>
+                <span class="tag">Wiele</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="trail-card" onclick="openModal('bike-5')">
+        <div class="trail-img-wrap">
+            <img src="assets/kaszuby_hero.png" alt="Szlak Józefa Wybickiego" class="trail-img"
+                style="filter: saturate(0.9) brightness(1.05);" />
+            <span class="trail-badge badge-black">Czarny</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+        </div>
+        <div class="trail-body">
+            <h3 class="trail-name">Szlak Józefa Wybickiego</h3>
+            <div class="trail-meta">
+                <span>📏 ~25 km</span>
+                <span>⏱️ Półdniowy</span>
+            </div>
+            <p class="trail-desc">Historyczny szlak prowadzący między Będominem (miejscem urodzenia twórcy
+                polskiego hymnu) a Sikorzynem. Łączy piękno przyrody z historią narodową.</p>
+            <div class="trail-tags">
+                <span class="tag">Będomin</span>
+                <span class="tag">Hymn Polski</span>
+                <span class="tag">Historia</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="trail-card" onclick="openModal('bike-6')">
+        <div class="trail-img-wrap">
+            <img src="assets/szlak_kaszubski.png" alt="Błękitna Trasa Rowerowa" class="trail-img"
+                style="filter: hue-rotate(170deg) saturate(0.85);" />
+            <span class="trail-badge badge-blue">Niebieski</span>
+            <span class="trail-difficulty diff-easy">Łatwy</span>
+        </div>
+        <div class="trail-body">
+            <h3 class="trail-name">Błękitna Trasa Rowerowa</h3>
+            <div class="trail-meta">
+                <span>📏 36,5 km</span>
+                <span>⏱️ Półdniowy</span>
+            </div>
+            <p class="trail-desc">Trasa wzdłuż Zatoki Gdańskiej i w okolicach Kaszubskiego Parku
+                Krajobrazowego. Wydzielone ścieżki rowerowe, minimalne przewyższenia, idealna dla dzieci.
+            </p>
+            <div class="trail-tags">
+                <span class="tag">Zatoka Gdańska</span>
+                <span class="tag">Ścieżka</span>
+                <span class="tag">KPK</span>
+            </div>
+        </div>
+    </article>
+    </div>
+    </div>
     </section>
 
     <!-- LAKES -->
@@ -882,6 +1059,181 @@
                     </div>
                 </article>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTAURANTS (NEW SECTION) -->
+    <section class="section bg-light" id="restaurants">
+        <div class="container">
+            <div class="section-label">Gastronomia</div>
+            <h2 class="section-title">Polecane Restauracje i Regionalne Smaki</h2>
+            <p class="section-desc">Kaszuby to nie tylko wspaniałe krajobrazy, ale i bogata kultura kulinarna. Spróbuj
+                tradycyjnej czerniny, pierogów kaszubskich, świeżych ryb i dań z gęsiny w starannie wyselekcjonowanych
+                lokalach.</p>
+
+            <div class="places-grid">
+                <!-- Restaurant 1 -->
+                <article class="place-card" onclick="openModal('rest-1')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_mulk_checz.png" alt="Mulk Checz Kaszubska" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Miszewko (pow. kartuski)</p>
+                        <h3 class="place-name">Mùlk Chëcz Kaszëbskô</h3>
+                        <p class="place-desc">Restauracja regionalna o bogatym kaszubskim wystroju. Słynie z dużych
+                            porcji i autentycznych smaków. W menu m.in. zupa brukwiowa, pikantne żołądki gęsie oraz
+                            domowa czernina. W weekendy często gra tu lokalna kapela.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Tradycyjna Kaszubska</span>
+                            <span class="tag">Regionalne Wnętrze</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 2 -->
+                <article class="place-card" onclick="openModal('rest-2')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_nordowi_mol.png" alt="Nordowi Mól" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Celbowo k. Pucka</p>
+                        <h3 class="place-name">Nordowi Mól</h3>
+                        <p class="place-desc">Jedno z najbardziej cenionych miejsc na mapie kulinarnej Nordy. Oferuje
+                            eleganckie wnętrze bogate w lokalne detale (jak stare koła młyńskie) i świetne regionalne
+                            jedzenie, zwłaszcza świeże ryby z Bałtyku w wyśmienitych odsłonach.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Klimatyczna</span>
+                            <span class="tag">Ryby z Bałtyku</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 3 -->
+                <article class="place-card" onclick="openModal('rest-3')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_pod_syty_gesia.png" alt="Pod Sytą Gęsią" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Przodkowo</p>
+                        <h3 class="place-name">Restauracja "Pod Sytą Gęsią"</h3>
+                        <p class="place-desc">Mieszcząca się w starannie odrestaurowanym spichlerzu, zachwyca
+                            swojskością i elegancją. Zgodnie z nazwą, króluje tu gęsina pod różnymi postaciami – od
+                            tradycyjnie pieczonej po wykwintne przystawki.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Spichlerz</span>
+                            <span class="tag">Specjały z gęsiny</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 4 -->
+                <article class="place-card" onclick="openModal('rest-4')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_karczma_viking.png" alt="Karczma Viking" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Steżyca</p>
+                        <h3 class="place-name">Karczma Viking</h3>
+                        <p class="place-desc">Rustykalna, przytulna tawerna w drewnianej chacie pełna myśliwskich
+                            trofeów i ciepła z kominka. Słynie z dań z dziczyzny, obfitych desek mięs i swobodnej,
+                            żeglarskiej atmosfery w sercu "Kółka Raduńskiego".</p>
+                        <div class="trail-tags">
+                            <span class="tag">Tawerna</span>
+                            <span class="tag">Dziczyzna / Mięsa</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 5 -->
+                <article class="place-card" onclick="openModal('rest-5')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_lesny_dwor.png" alt="Leśny Dwór" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Sulęczyno</p>
+                        <h3 class="place-name">Restauracja Biôłi Trus (Leśny Dwór)</h3>
+                        <p class="place-desc">Zlokalizowana w ekskluzywnym dworku nad brzegiem Jeziora Węgorzyno.
+                            Serwuje kuchnię polską i kaszubską w wydaniu "fine dining". Panoramiczne widoki na jezioro
+                            podczas posiłku gwarantowane.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Fine Dining</span>
+                            <span class="tag">Widok na jezioro</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 6 -->
+                <article class="place-card" onclick="openModal('rest-6')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_palac_lebunia.png" alt="Pałac Łebunia" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Łebunia</p>
+                        <h3 class="place-name">Restauracja Pałac Łebunia</h3>
+                        <p class="place-desc">Elegancka kuchnia dworska w odrestaurowanym pałacu. Imponujące sklepienia,
+                            sztukaterie i kryształowe żyrandole. Doskonałe miejsce na specjalne okazje, czerpiące
+                            zarówno z kuchni morskiej jak i pałacowej tradycji myśliwskiej.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Luksusowa</span>
+                            <span class="tag">Kuchnia Myśliwska</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 7 -->
+                <article class="place-card" onclick="openModal('rest-7')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_grzybowski_mlyn.png" alt="Grzybowski Młyn" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Grzybowski Młyn (k. Kościerzyny)</p>
+                        <h3 class="place-name">Karczma Grzybowski Młyn</h3>
+                        <p class="place-desc">Dawny młyn wodny zamieniony w pensjonat. Klimat jak "u babci", domowe
+                            przetwory z grzybów z pobliskich borów, ręcznie lepione pierogi, zapach tradycyjnego drewna.
+                            Autentyczny kulinarny skarb Borów Tucholskich.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Stary Młyn</span>
+                            <span class="tag">Grzyby Leśne</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 8 -->
+                <article class="place-card" onclick="openModal('rest-8')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_chata_kaszubska.png" alt="Gospoda Kaszubska" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Ostrzyce</p>
+                        <h3 class="place-name">Gospoda Kaszubska Chata</h3>
+                        <p class="place-desc">Bielone ściany, kwieciste wzory i strzecha – ta gospoda wygląda jak żywy
+                            skansen. Idealne miejsce po spacerze Szwajcarią Kaszubską. Oferują wyśmienite ruchanki z
+                            fjutem i lokalne sery z gospodarstw ekologicznych.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Swojskość</span>
+                            <span class="tag">Regionalne sery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restaurant 9 -->
+                <article class="place-card" onclick="openModal('rest-9')">
+                    <div class="place-img-wrap">
+                        <img src="assets/restauracja_rybarnia.png" alt="Rybarnia nad Wdzydzami" class="place-img" />
+                    </div>
+                    <div class="place-body">
+                        <p class="place-type">Wdzydze Kiszewskie</p>
+                        <h3 class="place-name">Ryby nad Jeziorem</h3>
+                        <p class="place-desc">Klasyczna, bezpretensjonalna smażalnia i wędzarnia na wodzie. Siedząc na
+                            drewnianym pomoście tuż przy przystani żeglarskiej, zjesz tu najświeższą sielawę, sandacza i
+                            pstrąga z pieca prosto od lokalnych rybaków.</p>
+                        <div class="trail-tags">
+                            <span class="tag">Ryby z pieca</span>
+                            <span class="tag">Smażalnia na wodzie</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
